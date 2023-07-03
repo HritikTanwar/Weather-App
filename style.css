@@ -20,7 +20,8 @@ body{
     background: url(images/background.jpg);
     background-size: cover;
     min-height: 100px;
-    height: max-content;
+    height: 150px;
+    transition: height 1s;
 
 }
 .search-in{
@@ -126,7 +127,8 @@ body{
 }
 
 .info{
-    display: none;
+    visibility: hidden;
+    transition-delay: 1s;
 }
 
 .error{

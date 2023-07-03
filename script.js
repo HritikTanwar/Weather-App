@@ -27,6 +27,7 @@ async function checkWeather(city){
         document.querySelector(".error").style.display = "block"
         document.querySelector(".info").style.display = "none"
     }
+
     else{
 
     document.querySelector(".city-name").textContent = data.name;
@@ -55,6 +56,8 @@ async function checkWeather(city){
         icon.src = "images/clear.png";
     }
     document.querySelector(".info").style.display = "block"
+    document.querySelector(".info").style.visibility = "visible"
+    document.querySelector(".box-container").style.height = "550px"
     document.querySelector(".error").style.display = "none"
     }
     
